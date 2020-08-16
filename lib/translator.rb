@@ -5,8 +5,8 @@ def load_library(path)
   emo_hash = YAML.load_file(path)
   
   emoticons = emo_hash.each_with_object({}) do |(key, value), emoticons|
-    #grabbing roman names with key, both emoticons stored in value
-    binding.pry
+    #grabbing roman names with key, both emoticons are going to be stored in value
+
     if !emoticons[key]
       emoticons[key] = {
         english: value[0],
