@@ -1,22 +1,22 @@
 require "yaml"
 require "pry"
 
-def load_library(path)
-  emo_hash = YAML.load_file(path)
+# def load_library(path)
+#   emo_hash = YAML.load_file(path)
   
-  emoticons = emo_hash.each_with_object({}) do |(key, value), emoticons|
-    #grabbing roman names with key, both emoticons are going to be stored in value
+#   emoticons = emo_hash.each_with_object({}) do |(key, value), emoticons|
+#     #grabbing roman names with key, both emoticons are going to be stored in value
 
-    if !emoticons[key]
-      emoticons[key] = {
-        english: value[0],
-        japanese: value[1]
-      }
-    end
+#     if !emoticons[key]
+#       emoticons[key] = {
+#         english: value[0],
+#         japanese: value[1]
+#       }
+#     end
 
-  end
-  binding.pry
-end
+#   end
+#   binding.pry
+# end
 
 # def load_library(path)
 #   emoticons = YAML.load_file(path)
