@@ -23,7 +23,7 @@ def load_library(path)
   emoticon_hash = {}
   emoticons.map do |name, value|
     # binding.pry
-    emoticon_hash = {name => {:english => value[0], :japanese => value[1]}}
+    emoticon_hash[name] = {:english => value[0], :japanese => value[1]}
   end
 end
 
