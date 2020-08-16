@@ -6,6 +6,7 @@ def load_library(path)
   
   emoticons = emo_hash.each_with_object({}) do |(key, value), emoticons|
     #grabbing roman names with key, both emoticons stored in value
+    binding.pry
     if !emoticons[key]
       emoticons[key] = {
         english: value[0],
