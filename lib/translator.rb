@@ -23,6 +23,7 @@ def load_library(path)
   emoticons.each do |name, value|
     emoticon_hash = {name => {:english => value[0], :japanese => value[1]}}
   end
+end
 
 
 def get_english_meaning(path, emoticon)
