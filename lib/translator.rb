@@ -17,7 +17,12 @@ require "pry"
   
 # end
 
-
+def load_library(path)
+  emoticons = YAML.load_file(path)
+  emoticon_hash = {}
+  emoticons.each do |name, value|
+    emoticon_hash = {name => {:english => value[0], :japanese => value[1]}}
+  end
 
 
 def get_english_meaning(path, emoticon)
