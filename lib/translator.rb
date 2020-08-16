@@ -25,7 +25,7 @@ def load_library(path)
     # binding.pry
     emoticon_hash[name] = {:english => value[0], :japanese => value[1]}
   end
-  binding.pry
+  emoticon_hash
 end
 
 
